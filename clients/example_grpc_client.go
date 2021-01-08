@@ -7,7 +7,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-func GetExampleGrpcClient() (examplePb.ExampleRpcServiceClient, error) {
+func GetExampleGrpcClient() (examplePb.ExampleGrpcServiceClient, error) {
 	// 检查服务
 	var err error
 	var conn *grpc.ClientConn
@@ -17,6 +17,6 @@ func GetExampleGrpcClient() (examplePb.ExampleRpcServiceClient, error) {
 	}
 
 	// 创建客户端
-	client := examplePb.NewExampleRpcServiceClient(conn)
+	client := examplePb.NewExampleGrpcServiceClient(conn)
 	return client, nil
 }

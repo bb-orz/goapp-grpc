@@ -262,22 +262,22 @@ func init() {
 func init() { proto.RegisterFile("example_grpc.proto", fileDescriptor_804d5c0a5eff92d4) }
 
 var fileDescriptor_804d5c0a5eff92d4 = []byte{
-	// 228 bytes of a gzipped FileDescriptorProto
+	// 230 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x90, 0x41, 0x4b, 0x03, 0x31,
-	0x10, 0x85, 0x69, 0x57, 0x8a, 0x9d, 0xb5, 0x05, 0x07, 0x11, 0x59, 0xa1, 0x48, 0x28, 0xe8, 0x29,
-	0x82, 0xfe, 0x83, 0x95, 0xf6, 0x56, 0x28, 0xf1, 0xe6, 0x45, 0xd2, 0xed, 0x10, 0x02, 0xcd, 0x4e,
-	0x4c, 0xa2, 0xd8, 0x7f, 0x2f, 0xa4, 0x65, 0x5d, 0x41, 0x3d, 0x86, 0x97, 0x79, 0x7c, 0xdf, 0x03,
-	0xa4, 0x4f, 0xed, 0xfc, 0x8e, 0x5e, 0x4d, 0xf0, 0x8d, 0xf4, 0x81, 0x13, 0x8b, 0x09, 0x94, 0x0b,
-	0xe7, 0xd3, 0x5e, 0xd1, 0xdb, 0x2a, 0x1a, 0x71, 0x0b, 0x93, 0x27, 0x76, 0x8e, 0x5b, 0x45, 0xd1,
-	0xaf, 0xa2, 0xc1, 0x4b, 0x18, 0x05, 0x8a, 0xef, 0xbb, 0x74, 0x35, 0xb8, 0x19, 0xdc, 0x9d, 0xaa,
-	0xe3, 0x4b, 0x5c, 0xc3, 0x78, 0xc9, 0x7c, 0xb8, 0xc2, 0x29, 0x0c, 0xed, 0x36, 0x7f, 0x28, 0xd4,
-	0xd0, 0x6e, 0xc5, 0x1c, 0x20, 0x87, 0xbf, 0x55, 0x8c, 0xfb, 0x15, 0xb5, 0x0e, 0x7f, 0x57, 0xe4,
-	0xf0, 0x5f, 0x8a, 0x87, 0x3d, 0x9c, 0x2f, 0x0e, 0x4e, 0xca, 0x37, 0xcf, 0x14, 0x3e, 0x6c, 0x43,
-	0x38, 0x87, 0x93, 0xb5, 0x6d, 0x0d, 0x9e, 0xc9, 0x9e, 0x59, 0x35, 0x95, 0x3f, 0xc5, 0x66, 0x50,
-	0x2c, 0x99, 0x11, 0x64, 0xa7, 0x51, 0x95, 0xb2, 0x47, 0x3d, 0x83, 0xa2, 0xd6, 0x01, 0x41, 0x76,
-	0x8c, 0x55, 0x29, 0xbf, 0x91, 0xea, 0x8b, 0x17, 0x34, 0xd4, 0x52, 0xd0, 0x89, 0xee, 0x8f, 0xbb,
-	0xae, 0x37, 0x9b, 0x51, 0x5e, 0xf5, 0xf1, 0x2b, 0x00, 0x00, 0xff, 0xff, 0x1d, 0x8d, 0x21, 0xc2,
-	0x6b, 0x01, 0x00, 0x00,
+	0x10, 0x85, 0x69, 0x57, 0x8a, 0x9d, 0xb5, 0x3d, 0x0c, 0x22, 0xb2, 0x42, 0x91, 0xa5, 0xa0, 0xa7,
+	0x08, 0xfa, 0x0f, 0x56, 0x5a, 0x4f, 0x85, 0xb2, 0xde, 0xbc, 0x48, 0xba, 0x1d, 0x42, 0xa0, 0xd9,
+	0x89, 0x93, 0x28, 0xea, 0xaf, 0x17, 0xd2, 0xb2, 0xae, 0xa0, 0x1e, 0xc3, 0xcb, 0x3c, 0xbe, 0xef,
+	0x01, 0xd2, 0xbb, 0x76, 0x7e, 0x47, 0xcf, 0x46, 0x7c, 0xa3, 0xbc, 0x70, 0xe4, 0x72, 0x02, 0xf9,
+	0xc2, 0xf9, 0xf8, 0x51, 0xd3, 0xcb, 0x2a, 0x98, 0xf2, 0x0a, 0x26, 0xf7, 0xec, 0x1c, 0xb7, 0x35,
+	0x05, 0xbf, 0x0a, 0x06, 0xcf, 0x60, 0x24, 0x14, 0x5e, 0x77, 0xf1, 0x7c, 0x70, 0x39, 0xb8, 0x3e,
+	0xae, 0x0f, 0xaf, 0xf2, 0x02, 0xc6, 0x4b, 0xe6, 0xfd, 0x15, 0x4e, 0x61, 0x68, 0xb7, 0xe9, 0x43,
+	0x56, 0x0f, 0xed, 0xb6, 0x9c, 0x03, 0xa4, 0xf0, 0xb7, 0x8a, 0x71, 0xbf, 0xa2, 0xd2, 0xf2, 0x77,
+	0x45, 0x0a, 0xff, 0xa5, 0xb8, 0xfd, 0x04, 0x5c, 0xec, 0x9d, 0x1e, 0xc4, 0x37, 0x8f, 0x24, 0x6f,
+	0xb6, 0x21, 0x9c, 0xc3, 0xd1, 0xda, 0xb6, 0x06, 0x4f, 0x54, 0x4f, 0xad, 0x98, 0xaa, 0x9f, 0x66,
+	0x33, 0xc8, 0x96, 0xcc, 0x08, 0xaa, 0xf3, 0x28, 0x72, 0xd5, 0xc3, 0x9e, 0x41, 0x56, 0x69, 0x41,
+	0x50, 0x1d, 0x64, 0x91, 0xab, 0x6f, 0xa6, 0xea, 0xf4, 0x09, 0x0d, 0xb5, 0x24, 0x3a, 0xd2, 0xcd,
+	0x61, 0xd8, 0xf5, 0x66, 0x33, 0x4a, 0xb3, 0xde, 0x7d, 0x05, 0x00, 0x00, 0xff, 0xff, 0x7f, 0xed,
+	0x03, 0x03, 0x6c, 0x01, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -288,144 +288,144 @@ var _ grpc.ClientConn
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion4
 
-// ExampleRpcServiceClient is the client API for ExampleRpcService service.
+// ExampleGrpcServiceClient is the client API for ExampleGrpcService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
-type ExampleRpcServiceClient interface {
+type ExampleGrpcServiceClient interface {
 	Ping(ctx context.Context, in *EmptyReqMsg, opts ...grpc.CallOption) (*CommonRespMsg, error)
 	Foo(ctx context.Context, in *FooReqMsg, opts ...grpc.CallOption) (*FooRespMsg, error)
 	Bar(ctx context.Context, in *BarReqMsg, opts ...grpc.CallOption) (*BarRespMsg, error)
 }
 
-type exampleRpcServiceClient struct {
+type exampleGrpcServiceClient struct {
 	cc *grpc.ClientConn
 }
 
-func NewExampleRpcServiceClient(cc *grpc.ClientConn) ExampleRpcServiceClient {
-	return &exampleRpcServiceClient{cc}
+func NewExampleGrpcServiceClient(cc *grpc.ClientConn) ExampleGrpcServiceClient {
+	return &exampleGrpcServiceClient{cc}
 }
 
-func (c *exampleRpcServiceClient) Ping(ctx context.Context, in *EmptyReqMsg, opts ...grpc.CallOption) (*CommonRespMsg, error) {
+func (c *exampleGrpcServiceClient) Ping(ctx context.Context, in *EmptyReqMsg, opts ...grpc.CallOption) (*CommonRespMsg, error) {
 	out := new(CommonRespMsg)
-	err := c.cc.Invoke(ctx, "/ExampleRpcService/Ping", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/ExampleGrpcService/Ping", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *exampleRpcServiceClient) Foo(ctx context.Context, in *FooReqMsg, opts ...grpc.CallOption) (*FooRespMsg, error) {
+func (c *exampleGrpcServiceClient) Foo(ctx context.Context, in *FooReqMsg, opts ...grpc.CallOption) (*FooRespMsg, error) {
 	out := new(FooRespMsg)
-	err := c.cc.Invoke(ctx, "/ExampleRpcService/Foo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/ExampleGrpcService/Foo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *exampleRpcServiceClient) Bar(ctx context.Context, in *BarReqMsg, opts ...grpc.CallOption) (*BarRespMsg, error) {
+func (c *exampleGrpcServiceClient) Bar(ctx context.Context, in *BarReqMsg, opts ...grpc.CallOption) (*BarRespMsg, error) {
 	out := new(BarRespMsg)
-	err := c.cc.Invoke(ctx, "/ExampleRpcService/Bar", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/ExampleGrpcService/Bar", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// ExampleRpcServiceServer is the server API for ExampleRpcService service.
-type ExampleRpcServiceServer interface {
+// ExampleGrpcServiceServer is the server API for ExampleGrpcService service.
+type ExampleGrpcServiceServer interface {
 	Ping(context.Context, *EmptyReqMsg) (*CommonRespMsg, error)
 	Foo(context.Context, *FooReqMsg) (*FooRespMsg, error)
 	Bar(context.Context, *BarReqMsg) (*BarRespMsg, error)
 }
 
-// UnimplementedExampleRpcServiceServer can be embedded to have forward compatible implementations.
-type UnimplementedExampleRpcServiceServer struct {
+// UnimplementedExampleGrpcServiceServer can be embedded to have forward compatible implementations.
+type UnimplementedExampleGrpcServiceServer struct {
 }
 
-func (*UnimplementedExampleRpcServiceServer) Ping(ctx context.Context, req *EmptyReqMsg) (*CommonRespMsg, error) {
+func (*UnimplementedExampleGrpcServiceServer) Ping(ctx context.Context, req *EmptyReqMsg) (*CommonRespMsg, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Ping not implemented")
 }
-func (*UnimplementedExampleRpcServiceServer) Foo(ctx context.Context, req *FooReqMsg) (*FooRespMsg, error) {
+func (*UnimplementedExampleGrpcServiceServer) Foo(ctx context.Context, req *FooReqMsg) (*FooRespMsg, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Foo not implemented")
 }
-func (*UnimplementedExampleRpcServiceServer) Bar(ctx context.Context, req *BarReqMsg) (*BarRespMsg, error) {
+func (*UnimplementedExampleGrpcServiceServer) Bar(ctx context.Context, req *BarReqMsg) (*BarRespMsg, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Bar not implemented")
 }
 
-func RegisterExampleRpcServiceServer(s *grpc.Server, srv ExampleRpcServiceServer) {
-	s.RegisterService(&_ExampleRpcService_serviceDesc, srv)
+func RegisterExampleGrpcServiceServer(s *grpc.Server, srv ExampleGrpcServiceServer) {
+	s.RegisterService(&_ExampleGrpcService_serviceDesc, srv)
 }
 
-func _ExampleRpcService_Ping_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ExampleGrpcService_Ping_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(EmptyReqMsg)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ExampleRpcServiceServer).Ping(ctx, in)
+		return srv.(ExampleGrpcServiceServer).Ping(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/ExampleRpcService/Ping",
+		FullMethod: "/ExampleGrpcService/Ping",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ExampleRpcServiceServer).Ping(ctx, req.(*EmptyReqMsg))
+		return srv.(ExampleGrpcServiceServer).Ping(ctx, req.(*EmptyReqMsg))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ExampleRpcService_Foo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ExampleGrpcService_Foo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(FooReqMsg)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ExampleRpcServiceServer).Foo(ctx, in)
+		return srv.(ExampleGrpcServiceServer).Foo(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/ExampleRpcService/Foo",
+		FullMethod: "/ExampleGrpcService/Foo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ExampleRpcServiceServer).Foo(ctx, req.(*FooReqMsg))
+		return srv.(ExampleGrpcServiceServer).Foo(ctx, req.(*FooReqMsg))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ExampleRpcService_Bar_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ExampleGrpcService_Bar_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(BarReqMsg)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ExampleRpcServiceServer).Bar(ctx, in)
+		return srv.(ExampleGrpcServiceServer).Bar(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/ExampleRpcService/Bar",
+		FullMethod: "/ExampleGrpcService/Bar",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ExampleRpcServiceServer).Bar(ctx, req.(*BarReqMsg))
+		return srv.(ExampleGrpcServiceServer).Bar(ctx, req.(*BarReqMsg))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-var _ExampleRpcService_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "ExampleRpcService",
-	HandlerType: (*ExampleRpcServiceServer)(nil),
+var _ExampleGrpcService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "ExampleGrpcService",
+	HandlerType: (*ExampleGrpcServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "Ping",
-			Handler:    _ExampleRpcService_Ping_Handler,
+			Handler:    _ExampleGrpcService_Ping_Handler,
 		},
 		{
 			MethodName: "Foo",
-			Handler:    _ExampleRpcService_Foo_Handler,
+			Handler:    _ExampleGrpcService_Foo_Handler,
 		},
 		{
 			MethodName: "Bar",
-			Handler:    _ExampleRpcService_Bar_Handler,
+			Handler:    _ExampleGrpcService_Bar_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

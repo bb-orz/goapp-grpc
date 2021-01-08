@@ -11,6 +11,20 @@ import (
 
 var Cfg *Config
 
+type Config struct {
+	Name       string
+	ServerHost string
+	ServerPort int64
+}
+
+func DefaultConfig() *Config {
+	return &Config{
+		Name:       "ExampleGRpc",
+		ServerHost: "127.0.0.1",
+		ServerPort: 8899,
+	}
+}
+
 func NewStarter() *starter {
 	s := new(starter)
 	s.cfg = &Config{}
@@ -53,7 +67,7 @@ func (s *starter) Setup(sctx *goinfras.StarterContext) {
 	// 创建grpc服务并注册
 	s.grpcServer = grpc.NewServer()
 	// 注册服务
-	examplePb.RegisterExampleRpcServiceServer(s.grpcServer, &services.ExampleRpcService{})
+	examplePb.RegisterExampleGrpcServiceServer(s.grpcServer, &services.ExampleGrpcService{})
 
 	sctx.Logger().OK(s.Name(), goinfras.StepSetup, "Register GRpc Service Server Successful!")
 
