@@ -3,16 +3,14 @@ Global:
   Env: "debug"         # 允许环境：dev、testing、product
   Host: "example.com"   # 主机地址
   Endpoint: "localhost"     # 节点
-  AppName: "goinfras_application"  # 应用名
+  AppName: "goapp-grpc"  # 应用名
   Version: "v1.0.0"        # 应用版本
 
 # Example GRpc 配置
-Example:
-  Name: "ExampleGRpc"
-  GrpcServerHost: "localhost"
-  GrpcServerPort: 8899
-  GrpcClientPort: 8889
-
+ExampleGrpc:
+  Name: "ExampleGrpc"
+  ServerHost: "127.0.0.1"
+  ServerPort: 8899
 
 # Gin web 引擎配置
 Gin:
@@ -91,9 +89,9 @@ Cron:
 
 # Json Web Token
 Jwt:
-  UseCache: true                          # 是否打开redis缓存
-  PrivateKey: "jwt_@key"                  # jwt编码私钥
-  ExpSeconds: 3600                        # jwt编码超时时间
+  UseCache: true                      # 是否打开redis缓存
+  PrivateKey: "jwt_key"            # jwt编码私钥
+  ExpSeconds: 3600                      # jwt编码超时时间
   TokenCacheKeyPrefix: "user.jwt.token."  # 缓存令牌键名前缀
 
 # 第三方OAuth配置

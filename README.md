@@ -7,13 +7,12 @@
 ```
 goapp       项目
 |-- app             构建程序目录：应用主包，资源组件注册，makefile、dockerfile、sh等皆放置于此；
+|-- client          GRPC Service Clients
 |-- common          常量定义，错误处理定义、响应定义等；
 |-- config          配置文件；
 |-- dtos            数据传输对象dto定义；            
-|-- restful         接口层：restful api网关；
-|-- rpc             接口层：rpc service；
-|-- web             web表现层； 
-|-- services        服务层：服务层解耦接口层和core核心业务逻辑（领域层、数据访问层、缓冲层），内部定义项目提供的业务能力，不实现具体业务逻辑，通过调用core内部各领域模块的具体实现提供服务；
+|-- protobuf        protobuf 协议定义及生成文件；
+|-- services        protobuf服务协议的实现，在此调用core核心领域逻辑完成业务交互
 |-- core            核心业务逻辑：服务层业务逻辑，以模块化方式封装，每个模块封装各自的领域设计、数据模型、数据访问、缓存等实现；
     |
     |-- moduleName1       核心业务模块
@@ -44,27 +43,14 @@ goapp       项目
 #### dtos
  - 数据传输对象定义
 
-#### restful
- - 定义外部交互逻辑和交互形式：如webUI渲染、RESTful
- - 文件名称为可以描述其业务含义的单词；
- - 不涉及任何业务，随时可以替换为其他形式的交互方式；
- - 与services层交互，使用services提供的业务逻辑能力，过滤请求封装响应，处理外部的resp/req；
-
-#### web
- - WebUI 表现层
- - 可使用任何web框架实现
- - 如使用go web 框架，只需将其做成启动器并注册即可，具体实现形式与restful类似，只不过多了个表现层/渲染模板
- 
-#### rpc
- - rpc service实现
- - 可根据需要选择不同的rpc框架
- - 建议实现的service server/client做成启动器的方式运行
+#### protobuf
+ - grpc 服务协议定义 
+ - 可根据需要选择不同的rpc框架生成
+ - 建议实现的service server做成启动器的方式运行，client做成连接的调用实例
  
 #### services
  - 文件名称使用为可以描述其业务含义的单词
- - 需要对外暴露的：
-    - DTO、service interface 接口方法
-    - 常量枚举、常数等 
+ - rpc_service为protobuf协议的实现
 
 #### core 
  - core层为业务逻辑的具体实现；

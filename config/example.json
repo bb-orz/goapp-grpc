@@ -1,16 +1,15 @@
 {
-  "Example":{
-    "Name":"ExampleGRpc",
-    "GrpcServerHost":"localhost",
-    "GrpcServerPort":8899,
-    "GrpcClientPort":8889
-  },
   "Global":{
     "Env":"debug",
     "Host":"example.com",
     "Endpoint":"localhost",
-    "AppName":"goinfras_application",
+    "AppName":"goapp-grpc",
     "Version":"v1.0.0"
+  },
+  "ExampleGrpc":{
+    "Name": "ExampleGrpc",
+    "ServerHost": "127.0.0.1",
+    "ServerPort": 8899
   },
   "Gin":{
     "Mode":"debug",
@@ -92,7 +91,7 @@
     "MaxCallSendMsgSize":0
   },
   "Logger":{
-    "AppName":"goinfras-sample-account",
+    "AppName":"goapp-grpc",
     "AppVersion":"v1.0.0",
     "DevEnv":true,
     "AddCaller":true,
